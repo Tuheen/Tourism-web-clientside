@@ -19,7 +19,7 @@ const AddProduct = () => {
         const addingProduct = {
             ...purchaseInfo
         }
-        fetch('http://localhost:5000/storedProduct', {
+        fetch('https://serene-caverns-31345.herokuapp.com/storedProduct', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

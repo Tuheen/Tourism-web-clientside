@@ -44,7 +44,7 @@ const PurchaseModal = ({openPurchase, handlePurchaseClose, service, setPackageSu
         }
 
             console.log(exploreProduct);
-    fetch('http://localhost:5000/explore', {
+    fetch('https://serene-caverns-31345.herokuapp.com/explore', {
         method:'POST',
         headers:{
             'content-type':'application/json'

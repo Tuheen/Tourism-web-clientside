@@ -14,14 +14,14 @@ const ManageOrders = () => {
     const [ products, setProducts ] = useState([]);
 
     useEffect( () => {
-        const url =`http://localhost:5000/exploreAll/admin`;
+        const url =`https://serene-caverns-31345.herokuapp.com/exploreAll/admin`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/exploreAll/${id}`;
+        const url = `https://serene-caverns-31345.herokuapp.com/exploreAll/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

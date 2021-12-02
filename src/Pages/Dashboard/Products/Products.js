@@ -15,7 +15,7 @@ const Products = () => {
     const [ products, setProducts ] = useState([]);
 
     useEffect( () => {
-        const url =`http://localhost:5000/exploreAll?email=${user.email}`;
+        const url =`https://serene-caverns-31345.herokuapp.com/exploreAll?email=${user.email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProducts(data));

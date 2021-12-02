@@ -12,7 +12,7 @@ const Services = () => {
     const [products, setProducts] = useState([])
 
     useEffect( () => {
-        const url =`http://localhost:5000/storedProduct/homePage`;
+        const url =`https://serene-caverns-31345.herokuapp.com/storedProduct/homePage`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProducts(data));
